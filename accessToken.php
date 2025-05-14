@@ -1,8 +1,8 @@
 <?php
 //YOU MPESA API KEYS
 // Consumer Key & Secret from Daraja (Sandbox)
-$consumerKey = "1hK8pU624F0cnYGuamcefNJ9tXzYzbMSfpKl28bJA9w0fwns";
-$consumerSecret = "AVF60BlmQVQZmGerOLJm0P4obWHRbrL48umQfl64JAKVb9WO84MqtNeOleK7rnLo";
+$consumerKey = "Enter Your Cunsumer Key";
+$consumerSecret = "Enter Your Consumer Secret";
 
 // Access Token
 $access_token_url = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
