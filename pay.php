@@ -1,5 +1,7 @@
 <?php
+// in the payment form add the submit btn to be deposite
 if (isset($_POST['deposit'])) {
+    
     include 'accessToken.php';
 
     // Collect form input
@@ -19,6 +21,10 @@ if (isset($_POST['deposit'])) {
     $Password = base64_encode($BusinessShortCode . $passkey . $Timestamp);
 
     // Callback URL (must be publicly accessible or use ngrok during dev)
+
+
+
+    // make sure the last part of teh line bellow marches your directory 
     $callbackurl = 'https://' . $_SERVER['HTTP_HOST'] . '/Online_Bookstore/callback.php';
     // $callbackurl = 'https://d8af-41-89-227-171.ngrok-free.app/Online_Bookstore/callback.php';
 
