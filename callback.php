@@ -21,7 +21,8 @@ if ($ResultCode == 0) {
 
     // code to know if the user has payed
 
-    $stmt = $con->prepare("INSERT INTO transaction (transactionAmount, transactionCode, phoneNumber) VALUES (?, ?, ?)");
-    $stmt->bind_param("dss", $Amount, $TransactionId, $UserPhoneNumber);
-    $stmt->execute();
+    // $stmt = $con->prepare("INSERT INTO transaction (transactionAmount, transactionCode, phoneNumber) VALUES (?, ?, ?)");
+    // $stmt->bind_param("dss", $Amount, $TransactionId, $UserPhoneNumber);
+    // $stmt->execute();
+    // the comented code is just to add the transaction in the database if and only of the transaction is complete
 }
